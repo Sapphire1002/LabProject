@@ -728,7 +728,7 @@
     程式碼: [Models_optimize_v1.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/optimization/Models_optimize_v1.py)
   </details>
 
-+ **2021.07.07 ~ 2021.07.27 Color Doppler 內容**
++ **2021.07.07 ~ 2021.07.27 Color Doppler**
   <details>
     <summary> 2021.07.07 ~ 2021.07.13 </summary>  
     進度:  
@@ -910,3 +910,5 @@
   [find_unit4.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Unit/find_unit4.py)  
   [DCMToAVI.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Modular/DCMToAVI.py)
   </details>  
+
++ **2021.11.09 ~ 2021.12.21 Apical four chamber Segmentation & Mitral Valve**
