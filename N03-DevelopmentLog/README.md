@@ -912,3 +912,66 @@
   </details>  
 
 + **2021.11.09 ~ 2021.12.21 Apical four chamber Segmentation & Mitral Valve**
+  <details>
+    <summary> 2021.11.09 ~ 2021.11.16 </summary>  
+    進度:  
+
+    1. 處理心臟週期    
+    程式碼: [handle_period.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/handle_period.py)  
+  </details>  
+  
+  <details>
+    <summary> 2021.11.17 ~ 2021.11.23 </summary>  
+    進度:  
+
+    1. 處理心臟週期    
+    2. Multi Threshold 一階插值  
+    程式碼:   
+  [handle_period.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/handle_period.py)  
+  [multi_thres.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/multi_thres.py)
+  </details> 
+  
+  <details>
+    <summary> 2021.11.24 ~ 2021.11.30 </summary>  
+    進度:  
+
+    1. Multi threshold 完成公式部分  
+    2. 抓取 A4C 心臟瓣膜位置  
+    程式碼:   
+  [multi_thres.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/multi_thres.py)  
+  [find_valve.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/Find_valve.py)
+  </details> 
+  
+  <details>
+    <summary> 2021.12.01 ~ 2021.12.07 </summary>  
+    進度:  
+
+    1. Multi threshold 優化演算法  
+    2. 修正 Kmeans 分群問題 & 初步預測腔室位置    
+    程式碼:   
+  [multi_thres.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/multi_thres.py)  
+  [find_valve.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/Find_valve.py)
+  </details> 
+  
+  <details>
+    <summary> 2021.12.08 ~ 2021.12.14 </summary>  
+    進度:  
+
+    1. 用 C 語言 計算 Multi threshold 結合 Python  
+    2. 調整 Multi threshold 計算 histogram 的方式  
+    3. 修正 Kmeans 分群問題  
+    4. 調整預測腔室位置的算法  
+    5. 修正抓取瓣膜的演算法    
+    程式碼:   
+  [Multi_thres.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/Multi_Threshold/Multi_Threshold.py)  
+  [convolution.c](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/Handle%20Convolution/convolution.c)  
+  [FindValve_v2.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Segmentation/FindValve_v2.py)
+  </details> 
+  
+  <details>
+    <summary> 2021.12.15 ~ 2021.12.21 </summary>  
+    進度:  
+
+    1. 整合系統程式架構  
+    程式碼: [Main.py](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System)  
+  </details> 
