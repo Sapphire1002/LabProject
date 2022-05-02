@@ -819,3 +819,24 @@
     2. 修正同個位置 contour 不連續的算法  
     程式碼: [match_all](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/match_model/match_all(watershed))
   </details>
+
++ **2021.09.08 ~ 2021.09.20 Color Doppler 視覺化 & 演算法調整(月底醫生開會展示)**
+  <details>
+    <summary> 2021.09.08 ~ 2021.09.14 </summary>  
+    進度:  
+
+    1. Doppler 演算法調整、視覺化  
+    程式碼:  
+    [doppler_model](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_v1.py)  
+    [doppler_main.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_main.py)
+  </details>
+  
+  <details>
+    <summary> 2021.09.15 ~ 2021.09.20 </summary>  
+    進度:  
+
+    1. Doppler 演算法調整、視覺化  
+    程式碼:  
+    [doppler_model](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_v1.py)  
+    [doppler_main.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_main.py)
+  </details>
