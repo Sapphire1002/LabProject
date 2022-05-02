@@ -1145,7 +1145,7 @@
     進度:  
 
     1. 整理架構, 測試  
-    2. PLA M-Mode
+    2. PLA M-Mode  
     程式碼: [System2](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System2)   
   </details> 
   
