@@ -975,3 +975,118 @@
     1. 整合系統程式架構  
     程式碼: [Main.py](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System)  
   </details> 
+
++ **2021.12.22 ~ 2022.04.29 Apical four chamber View Global Longitudinal Strain**
++ #### Muscle Sampling 2021.12.22 ~ 2022.03.12
+  <details>
+    <summary> 2021.12.22 ~ 2021.12.28 </summary>  
+    進度:  
+
+    1. 利用骨架圖找心臟範圍  
+    2. 整理問題紀錄  
+    程式碼: [Segmentation_v2.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/System/Segmentation_v2.py)  
+  </details> 
+  
+  <details>
+    <summary> 2021.12.29 ~ 2022.01.04 </summary>  
+    進度:  
+
+    1. 研究 Anatomically based geometric modelling of the musculoskeletal system and other organs 論文   
+  </details> 
+  
+    
+  <details>
+    <summary> 2022.01.05 ~ 2022.01.11 </summary>  
+    進度:  
+
+    1. 使用 Multi-Threshold 找心臟範圍  
+    程式碼: [Heart_Bound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ReplaceSkeleton_test.py)    
+  </details> 
+  
+  <details>
+    <summary> 2022.01.12 ~ 2022.01.17 </summary>  
+    進度:  
+
+    1. 使用 Multi-Threshold 找心臟範圍  
+    程式碼: [Heart_Bound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ReplaceSkeleton_test.py)    
+  </details> 
+  
+  <details>
+    <summary> 2022.01.18 ~ 2022.01.25 </summary>  
+    進度:  
+
+    1. 找出腔室間肌肉區域  
+    2. 1st Multi-Threshold Result 白色區塊相連  
+    3. 調整 Multi-Threshold  U、alpha、beta 值   
+    程式碼:  
+  [Heart_Bound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ReplaceSkeleton_test.py)   
+    [ConnectHeartBound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound.py)
+  </details> 
+  
+  <details>
+    <summary> 2022.02.08 ~ 2022.02.15 </summary>  
+    進度:  
+
+    1. 1st Multi-Threshold Result 白色區塊相連    
+       a. 定義可連接的區塊  
+       b. 以 BFS 搜索可連接的節點  
+    程式碼:  
+  [ConnectBoundTest.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound_test.py)   
+    [ConnectHeartBound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound.py)
+  </details> 
+  
+  <details>
+    <summary> 2022.02.16 ~ 2022.02.25 </summary>  
+    進度:  
+
+    1. 1st Multi-Threshold Result 白色區塊相連  
+       a. 定義可連接的區塊  
+       b. 將輪廓以特徵點取代  
+       c. 以 BFS 搜索可連接的點  
+    程式碼:  
+  [ConnectBoundTest.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound_test.py)   
+    [ConnectHeartBound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound.py)
+  </details> 
+  
+  <details>
+    <summary> 2022.02.26 ~ 2022.03.04 </summary>  
+    進度:  
+
+    1. 1st Multi-Threshold Result 白色區塊相連        
+        a. 定義可連接的區塊(調整 Multi-Threshold 階數)    
+        b. 將輪廓以特徵點取代(處理輪廓特徵點連接方式)   
+        c. 以 BFS 搜索可連接的節點  
+    程式碼:  
+  [ConnectBoundTest.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound_test.py)   
+    [ConnectHeartBound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Heart%20Bound/ConnectHeartBound.py)
+  </details> 
+  
+  <details>
+    <summary> 2022.03.05 ~ 2022.03.11 </summary>  
+    進度:  
+
+    1. 1st Multi-Threshold Result 白色區塊相連        
+        a. 定義可連接的區塊(調整 Multi-Threshold 階數)    
+        b. 將輪廓以特徵點取代(處理輪廓特徵點連接方式)   
+        c. 特徵點 Semantic & 預測 (基於已知 View)  
+        - [x] 利用標準型的相對位置關係定義特徵點的位置(X)  
+        - [ ] 基於 Kmeans 的相對位置定義特徵點的位置  
+    程式碼: [Semantic](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/Heart%20Bound/Semantic)   
+  </details> 
+
++ #### LV Muscle Segmentation & Semantic(Speckle Tracking) 2022.03.12 ~ 2022.04.15
+  <details>
+    <summary> 2022.03.12 ~ 2022.03.17 </summary>  
+    進度:  
+
+    1. 1st Multi-Threshold Result 白色區塊相連        
+        a. 定義可連接的區塊(調整 Multi-Threshold 階數)    
+        b. 將輪廓以特徵點取代(處理輪廓特徵點連接方式)
+        c. 疊加取平均後給機器學習模型訓練  
+        d. 特徵點 Semantic & 預測 (基於已知 View)  
+        - [ ] 利用標準型的相對位置關係定義特徵點的位置(X)  
+        - [x] 基於 Kmeans 的相對位置定義特徵點的位置  
+    程式碼:  
+  [Semantic](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/Heart%20Bound/Semantic)   
+  [SVM_Train](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System2/Predict%20View)
+  </details> 
