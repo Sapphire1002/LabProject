@@ -624,7 +624,7 @@
 
 ## 心臟影像
 #### **每周進度**
-+ **2021.05.07 ~ 2021.07.06 皆為練習學長之前學過的內容**
++ **2021.05.07 ~ 2021.07.06 皆為練習學長教的內容**
 
   <details>
     <summary> 2021.05.07 ~ 2021.05.12 </summary>  
@@ -839,4 +839,52 @@
     程式碼:  
     [doppler_model](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_v1.py)  
     [doppler_main.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_main.py)
+  </details>
+
++ **2021.09.21 ~ 2021.10.26 Parasternal Long Axis Segmentation & M-Mode(非確切醫學實際結果)**
+  <details>
+    <summary> 2021.09.21 ~ 2021.09.27 </summary>  
+    進度:  
+
+    1. 找標準長度
+    2. Parasternal Long Axis M-Mode  
+    程式碼:  
+    [find_unit.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Unit/find_unit.py)  
+    [PLA_M_Mode.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/m-mode/PLA_M_mode.py)
+  </details>
+  
+  <details>
+    <summary> 2021.09.28 ~ 2021.10.05 </summary>  
+    進度:  
+
+    1. PLA Segmentation  
+    程式碼: [(matching_test)PLA_seg.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/match_model/match_all(muscle)/matching_test.py)  
+  </details>
+  
+  <details>
+    <summary> 2021.10.06 ~ 2021.10.12 </summary>  
+    進度:  
+
+    1. PLA Segmentation(M-Mode): 找出 Key Points  
+    程式碼: [(M_Mode_matching)PLA_seg.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/m-mode/PLA_M_Mode_matching.py)  
+  </details>
+  
+  <details>
+    <summary> 2021.10.13 ~ 2021.10.19 </summary>  
+    進度:  
+
+    1. PLA Segmentation(M-Mode): 修正演算法  
+    2. 研究 Speckle Tracking & GLS  
+    程式碼: [(M_Mode_matching)PLA_seg.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/m-mode/PLA_M_Mode_matching.py)  
+  </details>
+  
+  <details>
+    <summary> 2021.10.20 ~ 2021.10.26 </summary>  
+    進度:  
+
+    1. Segmentation: 抓出心臟範圍
+    2. 研究 Speckle Tracking & GLS
+    3. 研究 CNN 兩篇論文的程式
+    4. 研究 Condensation 演算法  
+    程式碼: [(matching_test)heart_bound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/match_model/match_all(muscle)/matching_test.py)  
   </details>
