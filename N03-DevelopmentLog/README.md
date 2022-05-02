@@ -1084,8 +1084,8 @@
         b. 將輪廓以特徵點取代(處理輪廓特徵點連接方式)
         c. 疊加取平均後給機器學習模型訓練  
         d. 特徵點 Semantic & 預測 (基於已知 View)  
-        - [ ] 利用標準型的相對位置關係定義特徵點的位置   
-        - [x] 基於 Kmeans 的相對位置定義特徵點的位置  
+        - [ ] 利用標準型的相對位置關係定義特徵點的位置    
+        - [x] 基於 Kmeans 的相對位置定義特徵點的位置    
     程式碼:  
   [Semantic](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/Heart%20Bound/Semantic)   
   [SVM_Train](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System2/Predict%20View)
@@ -1101,7 +1101,7 @@
         c. 疊加取平均後給機器學習模型訓練  
         d. 特徵點 Semantic & 預測 (基於已知 View)  
         - [x] Matching(LV Region)   
-        - [x] 基於 Kmeans 的瓣膜位置, 限制 LV 範圍 
+        - [x] 基於 Kmeans 的瓣膜位置, 限制 LV 範圍  
     程式碼: [Matching](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/Matching)   
   </details> 
 
@@ -1117,7 +1117,24 @@
         - [x] Matching(LV Region)  
         - [x] 特徵點(Sampling) & 擬合曲線  
         - [x] 基於 Kmeans 的瓣膜位置, 限制 LV 範圍  
-        - [x] 連接三段肌肉, 將點重新取樣  
-
+        - [x] 連接三段肌肉, 將點重新取樣   
     程式碼: [System3](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System3)   
+  </details> 
+  
+  <details>
+    <summary> 2022.04.02 ~ 2022.04.07 </summary>  
+    進度:  
+
+    1. 處理 Matching 的問題  
+    2. GLS 定位點(Global Longitudinal Strain)  
+    程式碼: [(Matching_v2)System3](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System3)   
+  </details> 
+  
+  <details>
+    <summary> 2022.04.08 ~ 2022.04.15 </summary>  
+    進度:  
+
+    1. 處理 Matching 的問題  
+    2. 整理架構, 測試
+    程式碼: [(Matching_v2)System3](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System3)   
   </details> 
