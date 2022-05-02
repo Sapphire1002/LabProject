@@ -841,7 +841,7 @@
     [doppler_main.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Doppler/video/doppler_model/integration_main.py)
   </details>
 
-+ **2021.09.21 ~ 2021.10.26 Parasternal Long Axis Segmentation & M-Mode(非確切醫學實際結果)**
++ **2021.09.21 ~ 2021.11.01 Parasternal Long Axis Segmentation & M-Mode(非確切醫學實際結果)**
   <details>
     <summary> 2021.09.21 ~ 2021.09.27 </summary>  
     進度:  
@@ -888,3 +888,25 @@
     4. 研究 Condensation 演算法  
     程式碼: [(matching_test)heart_bound.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/match_model/match_all(muscle)/matching_test.py)  
   </details>
+  
+  <details>
+    <summary> 2021.10.27 ~ 2021.11.01 </summary>  
+    進度:  
+
+    1. Segmentation: 找出腔室中心點 & 邊界
+    2. 論文程式架構圖  
+    程式碼: [(matching_test)chamber_center.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/match_model/match_all(muscle)/matching_test.py)  
+  </details>  
+
++ **2021.11.02 ~ 2021.11.08 整合模組**
+  <details>
+    <summary> 2021.10.27 ~ 2021.11.01 </summary>  
+    進度:  
+
+    1. 整合影像基本資訊模組  
+       和檔案有關: DCM 轉 AVI (完成)  
+       和影片有關: ROI、標準長度 & BPM(完成)  
+    程式碼:  
+  [find_unit4.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Unit/find_unit4.py)  
+  [DCMToAVI.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/Modular/DCMToAVI.py)
+  </details>  
