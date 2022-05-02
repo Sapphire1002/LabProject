@@ -632,6 +632,7 @@
 
     1. 分割心臟肌肉位置  
     2. 了解心臟 10 個種類  
+  程式碼: [split_muscle.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/split_muscle.py)
   </details>
 
   <details>
@@ -640,7 +641,8 @@
 
     1. 分割心臟肌肉位置
     2. 手動分類心臟種類
-    3. 了解 DBSCAN
+    3. 了解 DBSCAN  
+    程式碼: [split_muscle_v2.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/split_muscle_v2.py)
   </details>
 
   <details>
@@ -648,7 +650,11 @@
     進度:  
 
     1. 將未分好類別的心臟圖片做分類
-    2. 訓練分類器(跑過學長的程式)
+    2. 訓練分類器(跑過學長的程式)  
+  程式碼:  
+  [classification_datasets.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/classification_datasets.py)  
+  [train.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/example/train.py)    
+  [confusionMatrix.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/example/confusionMatrix.py)   
   </details>
 
   <details>
@@ -657,7 +663,11 @@
 
     1. 將 dcm 檔案轉 avi, png檔案
     2. 自行設計分類器  
-      (嘗試 sklearn 裡面的其他方式，比較準確率及執行時間)
+      (嘗試 sklearn 裡面的其他方式，比較準確率及執行時間)  
+    程式碼:  
+    [dcm_avi.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/dcm_avi.py)  
+    [check.txt](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/dcm_avi_data/check.txt)  
+    [report.log](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/dcm_avi_data/report.log)  
   </details>
 
   <details>
@@ -665,6 +675,8 @@
     進度:  
 
     1. 自行設計分類器  
+    程式碼: [classifier_test01.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_test01.py)  
+
   </details>
 
   <details>
@@ -672,8 +684,13 @@
     進度:  
 
     1. 自行設計分類器
-    2. 檢查資料集
-
+    2. 檢查資料集  
+    程式碼:  
+    [classifier_test02.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_test02.py)  
+    [test_model.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_use_test_model.py)  
+    [confusionMat.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_test_model_confusionMat.py)  
+    [classifier_tts_datasets.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_tts_datasets.py)  
+    [check_datasets.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/check_datasets.py)  
   </details>
 
   <details>
@@ -682,7 +699,14 @@
 
     1. 研究 json 資料格式(含補足 TP, TN, FP, FN 資料)
     2. 自行設計分類器(使用不同分類器嘗試)
-    3. 處理上周的問題紀錄和開會紀錄
+    3. 處理上周的問題紀錄和開會紀錄   
+    程式碼:  
+    [confusionMat.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_test_model_confusionMat.py)  
+    [classifier_tts_datasets.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_tts_datasets.py)  
+    [sklearn_model.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_sklearn.py)  
+    [sklearn_model_confusionMat.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/sklearn_model_confusionMat.py)  
+    [sklearn_rf.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/classifier_sklearn_rf.py)  
+    [use_rf_model.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/my%20classifier/use_random%20forest_model.py)  
 
   </details>
 
@@ -690,14 +714,18 @@
     <summary> 2021.06.24 ~ 2021.06.30 </summary>  
     進度:  
 
-    1. 優化程式及計算程式執行時間 
+    1. 優化程式及計算程式執行時間  
+    程式碼:  
+    [dcm_avi.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/dcm_avi.py)  
+    [train.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/example/train.py)  
   </details>
 
   <details>
     <summary> 2021.07.01 ~ 2021.07.06 </summary>  
     進度:  
 
-    1. 優化骨架化程式及計算該程式執行時間
+    1. 優化骨架化程式及計算該程式執行時間  
+    程式碼: [Models_optimize_v1.py](https://github.com/Sapphire0912/MyProgramming/blob/master/Python/Project/implement/heart%20recognize/optimization/Models_optimize_v1.py)
   </details>
 
 + **2021.07.07 ~ 2021.07.27 Color Doppler 內容**
