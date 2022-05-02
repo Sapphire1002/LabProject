@@ -626,105 +626,152 @@
 #### **每周進度**
 + **2021.05.07 ~ 2021.07.06 皆為練習學長之前學過的內容**
 
-<details>
-  <summary> 2021.05.07 ~ 2021.05.12 </summary>  
-  進度:  
-  
-  1. 分割心臟肌肉位置  
-  2. 了解心臟 10 個種類  
-</details>
+  <details>
+    <summary> 2021.05.07 ~ 2021.05.12 </summary>  
+    進度:  
 
-<details>
-  <summary> 2021.05.13 ~ 2021.05.19 </summary>  
-  進度:  
-  
-  1. 分割心臟肌肉位置
-  2. 手動分類心臟種類
-  3. 了解 DBSCAN
-</details>
+    1. 分割心臟肌肉位置  
+    2. 了解心臟 10 個種類  
+  </details>
 
-<details>
-  <summary> 2021.05.20 ~ 2021.05.26 </summary>  
-  進度:  
-  
-  1. 將未分好類別的心臟圖片做分類
-  2. 訓練分類器(跑過學長的程式)
-</details>
+  <details>
+    <summary> 2021.05.13 ~ 2021.05.19 </summary>  
+    進度:  
 
-<details>
-  <summary> 2021.05.27~ 2021.06.02 </summary>  
-  進度:  
-  
-  1. 將 dcm 檔案轉 avi, png檔案
-  2. 自行設計分類器  
-    (嘗試 sklearn 裡面的其他方式，比較準確率及執行時間)
-</details>
-    
-<details>
-  <summary> 2021.06.03 ~ 2021.06.09 </summary>  
-  進度:  
-  
-  1. 自行設計分類器  
-</details>
-    
-<details>
-  <summary> 2021.06.10 ~ 2021.06.16 </summary>  
-  進度:  
-  
-  1. 自行設計分類器
-  2. 檢查資料集
- 
-</details>
-  
-<details>
-  <summary> 2021.06.17 ~ 2021.06.23 </summary>  
-  進度:  
-  
-  1. 研究 json 資料格式(含補足 TP, TN, FP, FN 資料)
-  2. 自行設計分類器(使用不同分類器嘗試)
-  3. 處理上周的問題紀錄和開會紀錄
- 
-</details>
+    1. 分割心臟肌肉位置
+    2. 手動分類心臟種類
+    3. 了解 DBSCAN
+  </details>
 
-<details>
-  <summary> 2021.06.24 ~ 2021.06.30 </summary>  
-  進度:  
-  
-  1. 優化程式及計算程式執行時間 
-</details>
+  <details>
+    <summary> 2021.05.20 ~ 2021.05.26 </summary>  
+    進度:  
 
-<details>
-  <summary> 2021.07.01 ~ 2021.07.06 </summary>  
-  進度:  
-  
-  1. 優化骨架化程式及計算該程式執行時間
-</details>
+    1. 將未分好類別的心臟圖片做分類
+    2. 訓練分類器(跑過學長的程式)
+  </details>
+
+  <details>
+    <summary> 2021.05.27~ 2021.06.02 </summary>  
+    進度:  
+
+    1. 將 dcm 檔案轉 avi, png檔案
+    2. 自行設計分類器  
+      (嘗試 sklearn 裡面的其他方式，比較準確率及執行時間)
+  </details>
+
+  <details>
+    <summary> 2021.06.03 ~ 2021.06.09 </summary>  
+    進度:  
+
+    1. 自行設計分類器  
+  </details>
+
+  <details>
+    <summary> 2021.06.10 ~ 2021.06.16 </summary>  
+    進度:  
+
+    1. 自行設計分類器
+    2. 檢查資料集
+
+  </details>
+
+  <details>
+    <summary> 2021.06.17 ~ 2021.06.23 </summary>  
+    進度:  
+
+    1. 研究 json 資料格式(含補足 TP, TN, FP, FN 資料)
+    2. 自行設計分類器(使用不同分類器嘗試)
+    3. 處理上周的問題紀錄和開會紀錄
+
+  </details>
+
+  <details>
+    <summary> 2021.06.24 ~ 2021.06.30 </summary>  
+    進度:  
+
+    1. 優化程式及計算程式執行時間 
+  </details>
+
+  <details>
+    <summary> 2021.07.01 ~ 2021.07.06 </summary>  
+    進度:  
+
+    1. 優化骨架化程式及計算該程式執行時間
+  </details>
 
 + **2021.07.07 ~ 2021.07.27 Color Doppler 內容**
-<details>
-  <summary> 2021.07.07 ~ 2021.07.13 </summary>  
-  進度:  
-  
-  1. 研究都卜勒效應
-  2. 分割出影片中扇形區域
-  3. 分出扇形區域中的顏色部分
-  4. 新資料轉檔和骨架化
-</details>
+  <details>
+    <summary> 2021.07.07 ~ 2021.07.13 </summary>  
+    進度:  
 
-<details>
-  <summary> 2021.07.14 ~ 2021.07.20 </summary>  
-  進度:  
-  
-  1. 分類檔案
-  2. 分出扇形區域中的顏色部分
-  3. 針對都卜勒彩色部分做處理
-</details>
+    1. 研究都卜勒效應
+    2. 分割出影片中扇形區域
+    3. 分出扇形區域中的顏色部分
+    4. 新資料轉檔和骨架化
+  </details>
 
-<details>
-  <summary> 2021.07.21 ~ 2021.07.27 </summary>  
-  進度:  
+  <details>
+    <summary> 2021.07.14 ~ 2021.07.20 </summary>  
+    進度:  
+
+    1. 分類檔案
+    2. 分出扇形區域中的顏色部分
+    3. 針對都卜勒彩色部分做處理
+  </details>
+
+  <details>
+    <summary> 2021.07.21 ~ 2021.07.27 </summary>  
+    進度:  
+
+    1. 分類檔案
+    2. 針對都卜勒彩色部分做處理
+    3. 將影像中白色扇形區域移除，還原原始影像
+  </details>
+
++ **2021.07.28 ~ 2021.09.07 Parasternal Long Axis Matching & Watershed**
+  <details>
+    <summary> 2021.07.28 ~ 2021.08.03 </summary>  
+    進度:  
+
+    1. Match Parasternal Long Axis 模型
+  </details>
   
-  1. 分類檔案
-  2. 針對都卜勒彩色部分做處理
-  3. 將影像中白色扇形區域移除，還原原始影像
-</details>
+  <details>
+    <summary> 2021.08.04 ~ 2021.08.10 </summary>  
+    進度:  
+
+    1. 修正 Matching 模型的算法
+    2. Matching 模型後做 Watershed 找出肌肉部分
+  </details>
+  
+  <details>
+    <summary> 2021.08.11 ~ 2021.08.17 </summary>  
+    進度:  
+
+    1. Matching 模型後做 Watershed 找出腔室部分
+    2. ROI 區域調整
+  </details>
+  
+  <details>
+    <summary> 2021.08.18 ~ 2021.08.24 </summary>  
+    進度:  
+
+    1. Matching 模型後做 Watershed 找出腔室部分
+  </details>
+  
+  <details>
+    <summary> 2021.08.25 ~ 2021.08.31 </summary>  
+    進度:  
+
+    1. 標記位置相對應關係
+    2. 修正瓣膜抓取的方式
+  </details>
+  
+  <details>
+    <summary> 2021.09.01 ~ 2021.09.07 </summary>  
+    進度:  
+
+    1. 處理都卜勒影像影響 watershed 的情況
+    2. 修正同個位置 contour 不連續的算法
+  </details>
