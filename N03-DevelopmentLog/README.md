@@ -1139,20 +1139,20 @@
       程式碼: [(Matching_v2)System3](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System3)   
     </details> 
   
-A. #### 處理專題展內容 2022.04.16 ~ 2022.04.29
-    <details>
-      <summary> 2022.04.16 ~ 2022.04.22(因病調整進度) </summary>  
-      進度:  
+- #### 處理專題展內容 2022.04.16 ~ 2022.04.29
+  <details>
+    <summary> 2022.04.16 ~ 2022.04.22(因病調整進度) </summary>  
+    進度:  
 
-      1. 整理架構, 測試  
-      2. PLA M-Mode  
-      程式碼: [System2](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System2)   
-    </details> 
+    1. 整理架構, 測試  
+    2. PLA M-Mode  
+    程式碼: [System2](https://github.com/Sapphire0912/MyProgramming/tree/master/Python/Project/implement/heart%20recognize/System2)   
+  </details>
 
-    <details>
-      <summary> 2022.04.23 ~ 2022.04.29(處理專題展資料) </summary>  
-      進度:  
+  <details>
+    <summary> 2022.04.23 ~ 2022.04.29(處理專題展資料) </summary>  
+    進度:  
 
-      1. 處理專題展
-      2. 收集 Global Longitudinal Strain 計算方法的資料  
-    </details> 
+    1. 處理專題展
+    2. 收集 Global Longitudinal Strain 計算方法的資料  
+  </details> 
