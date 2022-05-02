@@ -658,7 +658,7 @@
   </details>
 
   <details>
-    <summary> 2021.05.27~ 2021.06.02 </summary>  
+    <summary> 2021.05.27 ~ 2021.06.02 </summary>  
     進度:  
 
     1. 將 dcm 檔案轉 avi, png檔案
