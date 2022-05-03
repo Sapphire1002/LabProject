@@ -35,7 +35,7 @@ def A4CModel(width, height):  # 剩下給予模型中每一段位置的名稱 (s
     }
 
     # --- A4C 肌肉模型部分
-    ModelPath = "E:\\MyProgramming\\Python\\Project\\implement\\heart recognize\\System3\\model" \
+    ModelPath = "E:\\MyProgramming\\Python\\Project\\implement\\heart recognize\\System2\\model" \
                 "\\0002_Apical four chamber(no valve)_Split9.png"
     A4C = cv2.imread(ModelPath)
 
@@ -199,7 +199,7 @@ def ModelMatching(src, target, vertical, horizontal, theta):
 
 
 class MatchModel(object):
-    def __init__(self, Path, roi, roi_center, OutputMatchingDir):
+    def __init__(self, Path, ROI, OutputMatchingDir):
         # video information
         self.video = cv2.VideoCapture(Path)
         self.Path = Path
@@ -207,8 +207,8 @@ class MatchModel(object):
         self.Width = int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH))
         self.OutputMatchingDir = OutputMatchingDir
 
-        self.roi = roi
-        self.ox, self.oy = roi_center
+        self.roi = ROI[0]
+        self.ox, self.oy = ROI[1]
         self.Info = None
 
         # mitral valve position
@@ -257,7 +257,7 @@ class MatchModel(object):
         print(f'----- 正在處理 {self.Path} Matching -----')
 
         video = self.video
-        ROI = self.roi
+        maskROI = self.roi
         ox, oy = self.ox, self.oy
         frame_count = 0
         matching_list = list()
@@ -273,13 +273,13 @@ class MatchModel(object):
 
             # - 瓣膜位置 & 預處理
             LeftMVPts, RightMVPts = LeftMV[frame_count], RightMV[frame_count]
-            frame[ROI != 255] = [0, 0, 0]
+            frame[maskROI != 255] = [0, 0, 0]
             frame_cp = frame.copy()
             frame_count += 1
             # - 瓣膜位置 & 預處理 End.
 
             # -- MultiThreshold v3
-            Multi = Mt.MultiThres(frame, ROI, 4, 0, 255)
+            Multi = Mt.MultiThres(frame, maskROI, 4, 0, 255)
             Multi.SearchMax()
             MultiFrame = Multi.threshold()
             # -- MultiThreshold v3 End.
@@ -312,7 +312,7 @@ class MatchModel(object):
             # 處理模型縮放比例及範圍 <- 盡可能避免模型縮放時有部分區域落在 ROI 外
             maskRange = np.ones((h, w), np.uint8) * 255
 
-            roi_inv = cv2.bitwise_xor(ROI[y:y + h, x:x + w], maskRange)
+            roi_inv = cv2.bitwise_xor(maskROI[y:y + h, x:x + w], maskRange)
             CntROI_inv, _ = cv2.findContours(roi_inv, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
             regOutY = list()
@@ -350,7 +350,7 @@ class MatchModel(object):
 
             # 2. 假設 模型 Apex Center 的 x axis 會在瓣膜的中間
             # # 判斷瓣膜右側支點的 x axis 是否向右側偏 (會超過 target 的範圍)
-            print(f'frame count: {frame_count}')
+            # print(f'frame count: {frame_count}')
             if RightMVPts[0] > x + w:
                 # # (2) 瓣膜右側支點的 x axis 歪掉(向右側偏)
                 # Current Handle: 不移動 x axis 只移動高度
@@ -418,7 +418,7 @@ class MatchModel(object):
             # - 由於經過平移, 旋轉, 因此要修正原本在 Info 裡面的資訊 End.
 
             # Sampling
-            Connect = Vp.ConnectBound(MT_target, frame_target, ROI[y + minY:y + h, x:x + w])
+            Connect = Vp.ConnectBound(MT_target, maskROI[y + minY:y + h, x:x + w])
             Connect.ContourSampling(step=8)
             SamplingInfo = Connect.SamplingInfo
             # End.
@@ -741,11 +741,11 @@ class MatchModel(object):
 
             # 原本的影像預處理
             frame_cp = frame.copy()
-            frame[ROI != 255] = [0, 0, 0]
+            frame[maskROI != 255] = [0, 0, 0]
             # - 瓣膜位置 & 預處理 End.
 
             # -- MultiThreshold v3
-            Multi = Mt.MultiThres(frame, ROI, 4, 0, 255)
+            Multi = Mt.MultiThres(frame, maskROI, 4, 0, 255)
             Multi.SearchMax()
             MultiFrame = Multi.threshold()
             # -- MultiThreshold v3 End.
@@ -778,7 +778,7 @@ class MatchModel(object):
             # 處理模型縮放比例及範圍 <- 盡可能避免模型縮放時有部分區域落在 ROI 外
             maskRange = np.ones((h, w), np.uint8) * 255
 
-            roi_inv = cv2.bitwise_xor(ROI[y:y + h, x:x + w], maskRange)
+            roi_inv = cv2.bitwise_xor(maskROI[y:y + h, x:x + w], maskRange)
             CntROI_inv, _ = cv2.findContours(roi_inv, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
             regOutY = list()
