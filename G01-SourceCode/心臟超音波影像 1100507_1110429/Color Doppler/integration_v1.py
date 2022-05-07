@@ -212,7 +212,7 @@ class DopplerModel(object):
     def find_region(self):
         """
         function:
-            find_region(self, input_path): 找出 Color Doppler 有效扇形區域
+            find_region(self): 找出 Color Doppler 有效扇形區域
 
         return:
             mask_region: 傳回 Color Doppler 有效區域遮罩, 二值圖
