@@ -23,7 +23,7 @@ def ImageContrast(img, brightness=0, contrast=0):
 
 def SplitContour(Cnts):
     """
-    function: SplitContourL(Cnts):
+    function: SplitContour(Cnts):
         拆分
     """
     CntList = list()
@@ -50,7 +50,6 @@ class ConnectBound(object):
         self.speckle = np.zeros(src.shape, np.uint8)
 
         self.SamplingInfo = dict()
-        self.PosList = list()
 
     def _HandleMTsrc(self, LevelThres=1):
         img = self.src
@@ -194,7 +193,6 @@ class ConnectBound(object):
     def ContourSampling(self, step=8):
         # -- Contour Sampling
         Cnt, _ = cv2.findContours(self.handle, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        PosList = self.PosList
 
         for pos, cnt in enumerate(Cnt):
             area = cv2.contourArea(cnt)

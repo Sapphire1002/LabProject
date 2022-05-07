@@ -3,6 +3,7 @@ import DCMToAVI
 import Preprocessing
 import A4CSegmentation
 import A4C_EA_Ratio
+import A4CGLS
 
 import time
 import cv2
@@ -13,7 +14,7 @@ def Process(
         OutputAVIDir,
         OutputSkeletonizeDir,
         OutputSegmentDir,
-        OutputGLSDir=None
+        OutputGLSDir
 ):
 
     """
@@ -44,6 +45,8 @@ def Process(
     FileCount = 0
     for DCMPath in DCMFiles:
         FileCount += 1
+        if FileCount != 1:
+            continue
         print(f'FileCount: {FileCount}')
         print(f'----- 正在進行 {DCMPath} DCM 轉檔 -----')
         DCMStartTime = time.time()
@@ -103,15 +106,23 @@ def Process(
         print(f'===== 完成 {FileName} Segment 所需時間: {round(SegmentEndTime - SegmentStartTime, 2)} 秒 =====\n')
         # 3. A4C Segmentation End.
 
-        # 4. E/A Ratio
-        EAValve = A4C_EA_Ratio.EARatio(
-            VideoPath=VideoPath,
-            ROI=ROI,
-            LeftValvePos=Segment.LeftPivotList,
-            RightValvePos=Segment.RightPivotList
-        )
-        EAValve.EAWave()
-
         # 4. Global Longitudinal Strain
+        MatchingStartTime = time.time()
+        print(f'----- 正在進行 {VideoPath} Global Longitudinal Strain 的 Muscle Semantic 處理 -----')
 
-        # 4. 計算 LVEF
+        try:
+            MatchLV = A4CGLS.MatchModel(
+                Path=VideoPath,
+                ROI=ROI,
+                OutputMatchingDir=OutputGLSDir
+            )
+            LeftValve, RightValve = Segment.LeftPivotList, Segment.RightPivotList
+            MatchLV.MuscleMatching(LeftValve, RightValve, isOutputVideo=True)
+
+        except:  # 通常是 fitting 會有狀況
+            print(f'{VideoPath} Matching 到 Fitting 過程有狀況 (未處理)')
+            continue
+
+        MatchingEndTime = time.time()
+        print(f'===== 完成 {FileName} Muscle Semantic 所需時間: {round(MatchingEndTime - MatchingStartTime, 2)} 秒 =====\n')
+

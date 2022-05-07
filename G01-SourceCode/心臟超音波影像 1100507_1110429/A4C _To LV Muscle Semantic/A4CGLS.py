@@ -209,7 +209,6 @@ class MatchModel(object):
 
         self.roi = ROI[0]
         self.ox, self.oy = ROI[1]
-        self.Info = None
 
         # mitral valve position
         self.LeftMValve = list()
