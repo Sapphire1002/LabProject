@@ -32,6 +32,7 @@ class MultiThres(object):
         # --- 處理影像是否灰階 End.
 
         # --- 統計影像灰階直方圖, 去除非 ROI 區域
+        self.src[self.roi != 255] = 0
         unique = np.unique(self.src, return_counts=True)
         not_roi_effect = np.unique(roi, return_counts=True)[1][0]
         unique[1][0] = unique[1][0] - not_roi_effect
