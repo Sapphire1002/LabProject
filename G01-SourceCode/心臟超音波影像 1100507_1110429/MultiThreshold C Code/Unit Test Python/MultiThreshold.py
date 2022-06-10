@@ -34,7 +34,8 @@ class MultiThres(object):
         # --- 統計影像灰階直方圖, 去除非 ROI 區域
         self.src[self.roi != 255] = 0
         unique = np.unique(self.src, return_counts=True)
-        not_roi_effect = np.unique(roi, return_counts=True)[1][0]
+        unique_roi = np.unique(roi, return_counts=True)
+        not_roi_effect = unique_roi[1][0] if len(unique_roi[0]) == 2 else 0
         unique[1][0] = unique[1][0] - not_roi_effect
         # --- 統計影像灰階直方圖, 去除非 ROI 區域 End.
 
@@ -44,12 +45,6 @@ class MultiThres(object):
         for index, scale in enumerate(unique[0]):
             hist[scale] = unique[1][index]
         # 1. 處理直方圖對應灰階值索引 End.
-        plt.bar(range(0, 256), hist, width=1, edgecolor='red')
-        plt.ylim((0, 6000))
-        plt.xlabel('Gray Scale')
-        plt.ylabel('Count')
-        plt.show()
-        plt.gcf()
 
         # 2. 線性內插
         for index, scale in enumerate(unique[0]):
@@ -69,7 +64,6 @@ class MultiThres(object):
 
         # 2. 線性內插 End.
         # --- 一階內插 End.
-
         return hist
 
     def SearchMax(self):
@@ -85,8 +79,6 @@ class MultiThres(object):
         AvgList = self.ValueList
         AvgList[0], AvgList[-1] = interval[0], interval[-1]
 
-        # print(f'interval: {interval}')
-        # print(f'AvgList: {AvgList}')
         for pos in range(self.level):
             left, right = interval[pos], interval[pos + 1]
 
@@ -99,7 +91,6 @@ class MultiThres(object):
                 avg = interval[pos]
             AvgList[2 * pos + 1] = avg
         # -- 計算 level 區間的加權平均值(高點) End.
-        # print(f'After High: {AvgList}')
 
         # -- 計算高點之間的加權平均值(低點)
         for pos in range(self.level - 1):
@@ -114,9 +105,6 @@ class MultiThres(object):
                 avg = AvgList[pos] + 1  # avoid the value of alpha is 0.
             AvgList[2 * (pos + 1)] = avg
         # -- 計算高點之間的加權平均值(低點) End.
-        # print(f'After Low: {AvgList}')
-
-        # print(self.ValueList.dtype, len(self.ValueList))
 
     def threshold(self):
         """
