@@ -169,7 +169,7 @@ void CMultiThreshold(int src[height][width]){
 
 
 //int main(){
-//	int *testList, data[] = {40, 70, 100, 137, 156, 201, 255}, length=7;
+//	int *testList, data[] = {0, 41, 70, 99, 120, 198, 255}, length=7;
 //	testList = data;
 //	
 //	// U OK
@@ -181,7 +181,7 @@ void CMultiThreshold(int src[height][width]){
 //	printf("size = %d\n", SIZE);
 //	printf("\n");
 //	// U End.
-//
+
 //	// UXmap, Umap OK
 //	for (int i=0;i<256;i++){
 //		printf("%d: Umap: %.4f, UXmap: %.4f  ;", i, Umap[i], UXmap[i]);
